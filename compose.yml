@@ -2,20 +2,20 @@ services:
   go1:
     build: ./go1
     container_name: go1
-    ports:
-      - "5001:8080"
+    networks:
+      - my_network
 
   go2:
     build: ./go2
     container_name: go2
-    ports:
-      - "5002:8080"
+    networks:
+      - my_network
 
   go3:
     build: ./go3
     container_name: go3
-    ports:
-      - "5003:8080"
+    networks:
+      - my_network
   
   nginx:
     build: ./nginx
@@ -23,4 +23,14 @@ services:
       - "5004:80"
     environment:
       - NGINX_PORT=80
+    networks:
+      - my_network
+    # どのコンテナが立ち上がった後に立ち上げるか
+    depends_on:
+      - go1
+      - go2
+      - go3
       
+networks:
+  my_network:
+    driver: bridge
