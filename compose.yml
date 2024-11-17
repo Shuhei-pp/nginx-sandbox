@@ -1,0 +1,16 @@
+services:
+  go1:
+    build: ./go1
+    ports:
+      - "5001:8080"
+
+  go2:
+    build: ./go2
+    ports:
+      - "5002:8080"
+      
+  go3:
+    build: ./go3
+    ports:
+      - "5003:8080"
+      
