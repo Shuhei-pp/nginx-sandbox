@@ -1,0 +1,33 @@
+== Info:   Trying [::1]:6000...
+== Info: Connected to localhost (::1) port 6000
+=> Send header, 77 bytes (0x4d)
+0000: 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a GET / HTTP/1.1..
+0010: 48 6f 73 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a Host: localhost:
+0020: 36 30 30 30 0d 0a 55 73 65 72 2d 41 67 65 6e 74 6000..User-Agent
+0030: 3a 20 63 75 72 6c 2f 38 2e 34 2e 30 0d 0a 41 63 : curl/8.4.0..Ac
+0040: 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d 0a          cept: */*....
+<= Recv header, 17 bytes (0x11)
+0000: 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d HTTP/1.1 200 OK.
+0010: 0a                                              .
+<= Recv header, 22 bytes (0x16)
+0000: 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e Server: nginx/1.
+0010: 32 37 2e 32 0d 0a                               27.2..
+<= Recv header, 37 bytes (0x25)
+0000: 44 61 74 65 3a 20 54 75 65 2c 20 31 39 20 4e 6f Date: Tue, 19 No
+0010: 76 20 32 30 32 34 20 30 37 3a 33 35 3a 32 39 20 v 2024 07:35:29 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 41 bytes (0x29)
+0000: 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 Content-Type: te
+0010: 78 74 2f 70 6c 61 69 6e 3b 20 63 68 61 72 73 65 xt/plain; charse
+0020: 74 3d 75 74 66 2d 38 0d 0a                      t=utf-8..
+<= Recv header, 20 bytes (0x14)
+0000: 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 Content-Length: 
+0010: 31 33 0d 0a                                     13..
+<= Recv header, 24 bytes (0x18)
+0000: 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 Connection: keep
+0010: 2d 61 6c 69 76 65 0d 0a                         -alive..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 13 bytes (0xd)
+0000: 73 65 72 76 65 72 31 e3 81 a7 e3 81 99          server1......
+== Info: Connection #0 to host localhost left intact
