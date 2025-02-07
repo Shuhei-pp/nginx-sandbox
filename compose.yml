@@ -30,9 +30,6 @@ services:
       - go1
       - go2
       - go3
-    volumes:
-      - ./auth/.htpasswd:/etc/nginx/.htpasswd:ro
-      - ./auth/auth.html:/usr/share/nginx/html/auth/index.html:ro
 
 networks:
   my_network:

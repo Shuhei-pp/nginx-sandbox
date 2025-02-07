@@ -1,2 +1,4 @@
 FROM nginx
 COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./.htpasswd /etc/nginx/.htpasswd
+COPY ./auth.html /usr/share/nginx/html/auth/auth.html
